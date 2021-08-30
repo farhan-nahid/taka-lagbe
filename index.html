@@ -5,6 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taka Lagbe</title>
+    <!-- tailwind css link -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body class="bg-gray-100">
+    <header>
+      <h1 class="text-center text-4xl font-semibold my-24 text-gray-600">
+        <span class="text-green-400 font-bold">Taka Lagle</span> Login koro 😁
+      </h1>
+    </header>
+    <main>
+      <div class="bg-yellow-100 w-3/4 mx-auto py-16 rounded-2xl shadow-2xl">
+        <input
+          type="email"
+          id="email__input"
+          class="
+            placeholder-purple-400
+            focus:placeholder-purple-300
+            p-2
+            ml-8
+            rounded-lg
+            block
+            w-3/4
+            mb-4
+            focus:border-gray-400
+            border-2 border-gray-300
+            outline-none
+          "
+          value="taka.lagbe@gmail.com"
+          placeholder="Please Enter a Email"
+        />
+        <input
+          type="password"
+          id="password__input"
+          class="
+            placeholder-purple-400
+            focus:placeholder-purple-300
+            p-2
+            ml-8
+            rounded-lg
+            block
+            w-3/4
+            mb-4
+            focus:border-gray-400
+            border-2 border-gray-300
+            outline-none
+          "
+          value="taka.lagbe"
+          placeholder="Please Enter a Password"
+        />
+        <button
+          id="validate__button"
+          class="
+            ring-4 ring-gray-300
+            text-white
+            font-semibold
+            rounded-xl
+            bg-green-400
+            ml-8
+            px-8
+            py-2
+          "
+        >
+          Button
+        </button>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- custom js file -->
+    <script src="./index.js"></script>
+  </body>
 </html>
