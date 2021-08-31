@@ -1,3 +1,10 @@
+/*
+  =================  
+      login js
+  ==================
+*/
+
+
 document
   .getElementById("validate__button")
   .addEventListener("click", function () {
@@ -7,8 +14,26 @@ document
       email.value == "taka.lagbe@gmail.com" &&
       password.value == "taka.lagbe"
     ) {
-      location.href = "./banking.html";
+      return (location.href = "./banking.html");
+    } else if (
+      typeof email.value != "string" ||
+      typeof password.value != "string"
+    ) {
+      return alert("Please Enter a String Type Value!!");
+    } else if (
+      email.value == (null || undefined) ||
+      password.value == (null || undefined)
+    ) {
+      return alert("Email or Password can't be null or undefined");
     } else {
-      console.log("logout");
+      return alert("You Enter invalid Email or Password!!");
     }
   });
+
+/*
+  =================  
+      banking js
+  ==================
+*/
+
+

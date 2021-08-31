@@ -5,8 +5,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banking Page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- tailwind css link -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-gray-100">
-    <h1>banking</h1>
+  <body class="bg-gray-50">
+    <header>
+      <h1 class="text-center text-4xl font-semibold my-16 text-gray-600">
+        <span class="text-green-400 font-bold">Taka </span>Chimimini kore 😁
+      </h1>
+    </header>
+    <main class="w-10/12 m-auto">
+      <!-- banking card section start -->
+      <section class="grid grid-cols-3 gap-4 text-center font-semibold">
+        <!-- single card -->
+        <div class="bg-blue-300 rounded-lg py-14 shadow-xl text-gray-700">
+          <h4 class="text-2xl">Deposit</h4>
+          <h2 class="text-4xl mt-4">$<span id="deposit__amount">00</span></h2>
+        </div>
+        <!-- single card -->
+        <div class="bg-red-300 rounded-lg py-14 shadow-xl text-gray-700">
+          <h4 class="text-2xl">Withdraw</h4>
+          <h2 class="text-4xl mt-4">$<span id="deposit__amount">00</span></h2>
+        </div>
+        <!-- single card -->
+        <div class="bg-green-300 rounded-lg py-14 shadow-xl text-gray-700">
+          <h4 class="text-2xl">Balance</h4>
+          <h2 class="text-4xl mt-4">$<span id="deposit__amount">3200</span></h2>
+        </div>
+      </section>
+      <!-- banking card section end -->
+
+      <!-- input banking start -->
+      <section
+        class="grid grid-cols-2 gap-9 font-semibold w-11/12 mx-auto mt-8"
+      >
+        <div class="bg-blue-300 rounded-lg py-8 shadow-2xl text-gray-700">
+          <h4 class="text-2xl ml-8">Deposit</h4>
+          <input
+            type="email"
+            id="email__input"
+            class="
+              placeholder-purple-400
+              focus:placeholder-purple-300
+              p-2
+              ml-8
+              my-4
+              rounded-lg
+              block
+              w-3/4
+              mb-4
+              focus:border-gray-400
+              border-2 border-gray-300
+              outline-none
+            "
+            placeholder="$ Please Enter Your Deposit Amount"
+          />
+          <button
+            id="deposit__button"
+            class="
+              ring-4 ring-gray-300
+              text-white
+              font-semibold
+              rounded-xl
+              bg-green-400
+              ml-8
+              px-4
+              py-2
+              uppercase
+            "
+          >
+            Deposit
+          </button>
+        </div>
+        <!-- single card -->
+        <div class="bg-red-300 rounded-lg py-8 shadow-2xl text-gray-700">
+          <h4 class="text-2xl ml-8">Withdraw</h4>
+          <input
+            type="email"
+            id="email__input"
+            class="
+              placeholder-purple-400
+              focus:placeholder-purple-300
+              p-2
+              ml-8
+              my-4
+              rounded-lg
+              block
+              w-3/4
+              mb-4
+              focus:border-gray-400
+              border-2 border-gray-300
+              outline-none
+            "
+            placeholder="$ Please Enter Your Withdraw Amount"
+          />
+          <button
+            id="withdraw__button"
+            class="
+              ring-4 ring-gray-300
+              text-white
+              font-semibold
+              rounded-xl
+              bg-green-400
+              ml-8
+              px-4
+              py-2
+              uppercase
+            "
+          >
+            Withdraw
+          </button>
+        </div>
+      </section>
+      <!-- input banking end -->
+    </main>
+    <footer>
+      <p class="text-center mt-16">
+        Copyright &copy; All Right Reserved by
+        <a
+          href="https://github.com/farhan-nahid"
+          target="_blank"
+          class="font-semibold text-green-500"
+          >Taka Lagbe</a
+        >
+      </p>
+    </footer>
+    <!-- custom js file -->
+    <script src="./index.js"></script>
   </body>
 </html>
