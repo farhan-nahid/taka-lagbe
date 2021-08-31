@@ -16,7 +16,7 @@
   </head>
   <body class="bg-gray-50">
     <header>
-      <h1 class="text-center text-4xl font-semibold my-16 text-gray-600">
+      <h1 class="text-center text-4xl font-semibold my-24 text-gray-600">
         <span class="text-green-400 font-bold">Taka </span>Chimimini kore 😁
       </h1>
     </header>
@@ -31,28 +31,28 @@
         <!-- single card -->
         <div class="bg-red-300 rounded-lg py-14 shadow-xl text-gray-700">
           <h4 class="text-2xl">Withdraw</h4>
-          <h2 class="text-4xl mt-4">$<span id="deposit__amount">00</span></h2>
+          <h2 class="text-4xl mt-4">$<span id="withdraw__amount">00</span></h2>
         </div>
         <!-- single card -->
         <div class="bg-green-300 rounded-lg py-14 shadow-xl text-gray-700">
           <h4 class="text-2xl">Balance</h4>
-          <h2 class="text-4xl mt-4">$<span id="deposit__amount">3200</span></h2>
+          <h2 class="text-4xl mt-4">$<span id="total__amount">3200</span></h2>
         </div>
       </section>
       <!-- banking card section end -->
 
       <!-- input banking start -->
       <section
-        class="grid grid-cols-2 gap-9 font-semibold w-11/12 mx-auto mt-8"
+        class="grid grid-cols-2 gap-9 font-semibold w-11/12 mx-auto mt-16"
       >
         <div class="bg-blue-300 rounded-lg py-8 shadow-2xl text-gray-700">
           <h4 class="text-2xl ml-8">Deposit</h4>
           <input
-            type="email"
-            id="email__input"
+            type="number"
+            id="deposit__input"
             class="
-              placeholder-purple-400
-              focus:placeholder-purple-300
+              placeholder-yellow-400
+              focus:placeholder-yellow-300
               p-2
               ml-8
               my-4
@@ -87,11 +87,11 @@
         <div class="bg-red-300 rounded-lg py-8 shadow-2xl text-gray-700">
           <h4 class="text-2xl ml-8">Withdraw</h4>
           <input
-            type="email"
-            id="email__input"
+            type="number"
+            id="withdraw__input"
             class="
-              placeholder-purple-400
-              focus:placeholder-purple-300
+              placeholder-yellow-400
+              focus:placeholder-yellow-300
               p-2
               ml-8
               my-4
@@ -137,6 +137,6 @@
       </p>
     </footer>
     <!-- custom js file -->
-    <script src="./index.js"></script>
+    <script src="./banking.js"></script>
   </body>
 </html>

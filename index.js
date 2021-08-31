@@ -4,7 +4,6 @@
   ==================
 */
 
-
 document
   .getElementById("validate__button")
   .addEventListener("click", function () {
@@ -29,11 +28,3 @@ document
       return alert("You Enter invalid Email or Password!!");
     }
   });
-
-/*
-  =================  
-      banking js
-  ==================
-*/
-
-
