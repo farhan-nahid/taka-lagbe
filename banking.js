@@ -18,3 +18,32 @@ document
     totalBalance.innerText = total;
     depositInput.value = "";
   });
+
+// withdraw js
+
+document
+  .getElementById("withdraw__button")
+  .addEventListener("click", function () {
+    const withdrawInput = document.getElementById("withdraw__input");
+    const withdrawAmount = document.getElementById("withdraw__amount");
+    const withdrawInputNumber = parseFloat(withdrawInput.value);
+    const withdrawAmountNumber = parseFloat(withdrawAmount.innerText);
+    if ((withdrawInput.value = "" || withdrawInputNumber < 0)) {
+      alert("Please enter a valid value");
+      withdrawInput.value = "";
+      return false;
+    }
+    const totalWithdraw = withdrawAmountNumber + withdrawInputNumber;
+    const totalAmount = document.getElementById("total__amount");
+    const totalAmountNumber = parseFloat(totalAmount.innerText);
+    if (totalAmountNumber < withdrawInputNumber) {
+      alert("sorry you don't have enough money");
+      withdrawInput.value = "";
+      return false
+    } else {
+      withdrawAmount.innerText = totalWithdraw;
+      const total = totalAmountNumber - withdrawInputNumber;
+      totalAmount.innerText = total;
+      withdrawInput.value = "";
+    }
+  });
